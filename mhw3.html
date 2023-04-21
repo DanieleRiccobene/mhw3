@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flight search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mhw3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src="mhw3.js" defer="true"></script>
+    </head>
+
+    <body>
+        
+        <div id="titleDiv"><h1>Flight Search<span class="material-symbols-outlined">flight</span></h1></div>
+        <div id="container">
+            <form>
+                <div class="selezioni">
+
+                    <span>Da</span><div id="casellaPart">
+                        <input type="text" placeholder="Città o Aeroporto" id="formTextPartenza" name="partenza">
+                        <div id="resultPart" class="hidden"></div>
+                    </div>
+
+                    <span>A</span><div id="casellaDest">
+                       <input type="text" placeholder="Città o Aeroporto" id="formTextDestinazione" name="destinazione">
+                        <div id="resultDest" class="hidden"></div>
+                    </div>
+                    
+                </div>
+
+                <div class="selezioni">
+
+                    <span>Partenza</span><input type="date" class="formDate" name="dataPartenza">
+                    <span>Ritorno</span><input type="date" class="formDate" name="dataRitorno">
+                </div>
+                
+                <div class="selezioni">
+                    <span>Passeggeri</span>
+                    <input type="number" class="formNum" name="numeroAdulti">
+                    <span>Volo</span>
+                        <select id="formSel">
+                            <!--ECONOMY, PREMIUM_ECONOMY, BUSINESS, FIRST-->
+                            <option value="ECONOMY">ECONOMY</option>
+                            <option value="PREMIUM_ECONOMY">PREMIUM_ECONOMY</option>
+                            <option value="BUSINESS">BUSINESS</option>
+                            <option value="FIRST">FIRST</option>
+                        </select>
+                </div>
+                
+                <div id="searchFlight"><p>Cerca Voli!</p></button>
+                </div>
+            </form>
+        </div>
+        
+        <div id="flights">
+            
+        </div>
+    </body>
+</html>

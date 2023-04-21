@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+body
+{
+    margin: 0;
+}
+
+.material-symbols-outlined {
+margin-left: 10px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+form
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    background-color: #439775;
+    color: #fff;
+}
+
+#titleDiv
+{
+    font-family: "Noto Sans JP";
+    font-size: 30px;
+    background-color: #2a4747;
+    color: #fff;
+}
+
+#titleDiv h1
+{
+    margin: 0;
+}
+
+div.selezioni
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Anuphan";
+    font-size: 20px;
+}
+
+#formTextPartenza
+{
+    height: 20px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: #000000;
+    border: 3px solid rgb(113, 220, 31);
+    transition: border .3s ease;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#formTextPartenza:focus
+{
+    outline: none;
+    border-color: rgb(72, 148, 14);
+}
+
+#formTextDestinazione
+{
+    height: 20px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: #000000;
+    border: 3px solid rgb(113, 220, 31);
+    transition: border .3s ease;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#formTextDestinazione:focus
+{
+    outline: none;
+    border-color: rgb(72, 148, 14);
+}
+
+.formNum
+{
+    width: 174px;
+    height: 20px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 3px solid rgb(113, 220, 31);
+    transition: border .3s ease;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.formNum:focus
+{
+    outline: none;
+    border-color: rgb(72, 148, 14);
+}
+
+.formDate
+{
+    height: 20px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 3px solid rgb(113, 220, 31);
+    transition: border .3s ease;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.formDate:hover
+{
+    outline: none;
+    border-color: rgb(72, 148, 14);
+}
+
+#formSel
+{
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 3px solid rgb(113, 220, 31);
+    transition: border .3s ease;
+    font-family: inherit;
+    font-size: inherit;
+    width: 210px;
+}
+
+#formSel:hover
+{
+    outline: none;
+    border-color: rgb(72, 148, 14);
+}
+
+div#searchFlight
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    background-color:#2a4747;
+    border: solid 1.5px black;
+    color: #fff;
+    border-radius: 20%;
+    box-shadow: 0 2px #999;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+div#searchFlight:hover
+{
+    background-color: black;
+    color: #968e85;
+    cursor: pointer;
+}
+
+
+div#resultPart li:hover
+{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+div#resultPart ul
+{
+    list-style-type: none;
+    text-align: center;
+}
+
+div#resultPart
+{
+    position: absolute;
+    width: 165px;
+    color: #000000;
+    background-color: white;
+    border: solid 2px gray;
+    font-family: inherit;
+    padding-right: 40px;
+    margin-top: 40px;
+}
+
+div#resultDest
+{
+    position: absolute;
+    width: 165px;
+    color: #000000;
+    background-color: white;
+    border: solid 2px gray;
+    font-family: inherit;
+    padding-right: 40px;
+    margin-top: 40px;
+}
+
+div#resultDest li:hover
+{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+div#resultDest ul
+{
+    list-style-type: none;
+    text-align: center;
+}
+
+div#casellaPart
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+}
+
+div#casellaDest
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+div#flights
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.flightResult
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 70%;
+    min-height: 30%;
+    border: solid 2px #968e85;
+    background-color: #c1d7ae;
+    margin-top: 20px;
+    border-radius: 3%;
+    font-family: "Noto Sans JP";
+}
+
+div.flightResult div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.flightResult p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+}
